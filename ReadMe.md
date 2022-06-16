@@ -9,4 +9,10 @@ messages received on a Kafka topic `SSE.BROADCAST` which contain a header
 `sse_topic`.  The value of this topic (a utf-8 string) is the name the 
 consumer is expected to use in the subscription request.
 
+## Building multi-arch containers
+
+This will take *some* time....
+
+`docker buildx build --push -t <account>.dkr.ecr.<region>.amazonaws.com/kafka-sse-gateway:latest --platform linux/amd64,linux/arm64 .`
+
 
